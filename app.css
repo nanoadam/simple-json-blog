@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand';
+  background: #111;
+  color: white;
+  line-height: 1.5;
+}
+
+header {
+  background: blueviolet;
+}
+
+header h2 {
+  padding: 1rem;
+}
+
+/* Showcase */
+.showcase {
+  height: 300px;
+  background: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase-content {
+  text-align: center;
+}
+
+.showcase-content h3 {
+  font-size: 2rem;
+}
+
+.post-heading {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.posts-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.post {
+  background: rgb(63, 0, 122);
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.post h4 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .posts-container {
+    grid-template-columns: 1fr;
+  }
+}
